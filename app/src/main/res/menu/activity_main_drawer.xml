@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_profile"
+            android:iconTint="@color/red"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:iconTint="@color/red"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_feedback" />
+        <item
+            android:id="@+id/nav_invite_friends"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_invite" />
+        <item
+            android:id="@+id/nav_booking_history"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_booking_history" />
+        <item
+            android:id="@+id/nav_pending_orders"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_pending_orders" />
+
+        <item
+            android:id="@+id/nav_feedback_list"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_feedback_lists" />
+
+        <item
+            android:id="@+id/nav_manage_fuels"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_fragment_fuels" />
+
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_users" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_change_password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_camera"
+            android:iconTint="@color/red"
+            android:title="@string/menu_logout" />
+
+    </group>
+</menu>

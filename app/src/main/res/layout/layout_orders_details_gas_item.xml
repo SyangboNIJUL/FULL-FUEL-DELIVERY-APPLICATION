@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutGasItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_grey_border"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgGas"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_gas_station"
+        android:tint="@color/grey" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gasName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:inputType="textCapWords"
+        android:text="Natural Gas"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

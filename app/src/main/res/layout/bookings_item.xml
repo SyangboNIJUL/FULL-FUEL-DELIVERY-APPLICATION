@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/light_black"
+    android:padding="5dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutImg"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle_grey_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_gas_station"
+            android:layout_marginTop="5dp"
+            android:tint="@color/red" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/liters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:text="Gallons"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/gasName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:text="Premium"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|bottom"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textCapWords"
+        android:text="High Octane"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/layoutImg"
+        app:layout_constraintTop_toTopOf="@id/layoutImg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textCapWords"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toRightOf="@id/layoutImg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textCapWords"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toRightOf="@id/layoutImg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPhone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textCapWords"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toRightOf="@id/layoutImg"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtEmail" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="textCapWords"
+        android:text="$ 300"
+        android:textColor="@color/red"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/layoutImg"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/txtAddress">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnAccept"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutPass"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/red_rectangle_round_corners"
+            android:onClick="onLogin"
+            android:text="Accept"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutPass"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle_grey_border_round"
+            android:text="Reject"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnLocate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_below="@id/layoutPass"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle_grey_border_round"
+            android:onClick="onLogin"
+            android:text="Locate"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

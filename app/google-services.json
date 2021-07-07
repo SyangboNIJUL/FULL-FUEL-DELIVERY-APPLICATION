@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "276080448081",
+    "firebase_url": "https://full-fuelapp-default-rtdb.firebaseio.com",
+    "project_id": "full-fuelapp",
+    "storage_bucket": "full-fuelapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276080448081:android:b3511349e809353739de70",
+        "android_client_info": {
+          "package_name": "com.fuelup.FuelUp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276080448081-mjh6bekk3ck5qhiacnm70vcr24v6fmuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB12UvqplX5dEFaj52_G_jJXuPKY8Nhgs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276080448081-mjh6bekk3ck5qhiacnm70vcr24v6fmuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

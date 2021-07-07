@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.test.feulmgmt.ui.dashboard.MapsFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_pending" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.test.feulmgmt.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.test.feulmgmt.ui.feedback.FeedbackFragment"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/nav_booking_history"
+        android:name="com.test.feulmgmt.ui.booking.BookingHistoryFragment"
+        android:label="@string/menu_booking_history"
+        tools:layout="@layout/fragment_booking_history" />
+
+    <fragment
+        android:id="@+id/nav_pending_orders"
+        android:name="com.test.feulmgmt.ui.pending.PendingOrdersFragment"
+        android:label="@string/menu_pending_orders"
+        tools:layout="@layout/fragment_pending" />
+
+    <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.test.feulmgmt.ui.changepassword.ChangePassword"
+        android:label="@string/menu_change_password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <fragment
+        android:id="@+id/nav_manage_price"
+        android:name="com.test.feulmgmt.ui.price.ManagePriceFragment"
+        android:label="@string/menu_manage_price"
+        tools:layout="@layout/fragment_manage_price" />
+
+    <fragment
+        android:id="@+id/nav_manage_fuels"
+        android:name="com.test.feulmgmt.ui.fuel.FuelsFragment"
+        android:label="@string/menu_fragment_fuels"
+        tools:layout="@layout/fragment_fuels" />
+
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.test.feulmgmt.ui.users.UsersFragment"
+        android:label="@string/menu_users"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
+        android:id="@+id/nav_feedback_list"
+        android:name="com.test.feulmgmt.ui.feedback.FeedbackListsFragment"
+        android:label="@string/menu_feedback_lists"
+        tools:layout="@layout/fragment_feedback_lists" />
+
+</navigation>
